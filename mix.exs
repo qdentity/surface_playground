@@ -39,7 +39,7 @@ defmodule SurfacePlayground.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.16.0"},
+      {:phoenix_live_view, "~> 0.16.0", override: true},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.5"},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
@@ -49,7 +49,7 @@ defmodule SurfacePlayground.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:surface, "~> 0.5"}
+      {:surface, github: "surface-ui/surface", ref: "09cd5b495842321d0be909beb3532abd337cadf5"}
     ]
   end
 

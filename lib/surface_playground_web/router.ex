@@ -18,6 +18,7 @@ defmodule SurfacePlaygroundWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/hello", PageLive, :index
   end
 
   # Other scopes may use custom stacks.
